@@ -9,16 +9,26 @@
 /* Begin PBXBuildFile section */
 		042F5E892C42D97500E506C8 /* CryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042F5E882C42D97500E506C8 /* CryptoApp.swift */; };
 		042F5E8B2C42D97500E506C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042F5E8A2C42D97500E506C8 /* ContentView.swift */; };
-		042F5E8D2C42D97700E506C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042F5E8C2C42D97700E506C8 /* Assets.xcassets */; };
 		042F5E902C42D97700E506C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042F5E8F2C42D97700E506C8 /* Preview Assets.xcassets */; };
+		04CB7D692C589A820040E9A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CB7D682C589A820040E9A2 /* Assets.xcassets */; };
+		04CB7D6D2C589E090040E9A2 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB7D6C2C589E090040E9A2 /* Color.swift */; };
+		04CB7D732C58A5570040E9A2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB7D722C58A5570040E9A2 /* HomeView.swift */; };
+		04CB7D772C58A7220040E9A2 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB7D762C58A7220040E9A2 /* CircleButtonView.swift */; };
+		04CB7D792C58C0AB0040E9A2 /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB7D782C58C0AB0040E9A2 /* CircleButtonAnimationView.swift */; };
+		04CB7D7C2C58CB5E0040E9A2 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB7D7B2C58CB5E0040E9A2 /* CoinModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		042F5E852C42D97500E506C8 /* Crypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		042F5E882C42D97500E506C8 /* CryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoApp.swift; sourceTree = "<group>"; };
 		042F5E8A2C42D97500E506C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		042F5E8C2C42D97700E506C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		042F5E8F2C42D97700E506C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		04CB7D682C589A820040E9A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04CB7D6C2C589E090040E9A2 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		04CB7D722C58A5570040E9A2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		04CB7D762C58A7220040E9A2 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
+		04CB7D782C58C0AB0040E9A2 /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
+		04CB7D7B2C58CB5E0040E9A2 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +61,12 @@
 		042F5E872C42D97500E506C8 /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
+				04CB7D7A2C58CB460040E9A2 /* Models */,
+				04CB7D6E2C58A4AF0040E9A2 /* Core */,
+				04CB7D6B2C589DDB0040E9A2 /* Extensions */,
+				04CB7D682C589A820040E9A2 /* Assets.xcassets */,
 				042F5E882C42D97500E506C8 /* CryptoApp.swift */,
 				042F5E8A2C42D97500E506C8 /* ContentView.swift */,
-				042F5E8C2C42D97700E506C8 /* Assets.xcassets */,
 				042F5E8E2C42D97700E506C8 /* Preview Content */,
 			);
 			path = Crypto;
@@ -65,6 +78,72 @@
 				042F5E8F2C42D97700E506C8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		04CB7D6B2C589DDB0040E9A2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				04CB7D6C2C589E090040E9A2 /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		04CB7D6E2C58A4AF0040E9A2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				04CB7D742C58A6DE0040E9A2 /* Components */,
+				04CB7D6F2C58A4EC0040E9A2 /* Home */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		04CB7D6F2C58A4EC0040E9A2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				04CB7D712C58A5080040E9A2 /* Views */,
+				04CB7D702C58A4F40040E9A2 /* ViewModels */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		04CB7D702C58A4F40040E9A2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		04CB7D712C58A5080040E9A2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04CB7D722C58A5570040E9A2 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		04CB7D742C58A6DE0040E9A2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				04CB7D752C58A6EC0040E9A2 /* CircleButton */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		04CB7D752C58A6EC0040E9A2 /* CircleButton */ = {
+			isa = PBXGroup;
+			children = (
+				04CB7D762C58A7220040E9A2 /* CircleButtonView.swift */,
+				04CB7D782C58C0AB0040E9A2 /* CircleButtonAnimationView.swift */,
+			);
+			path = CircleButton;
+			sourceTree = "<group>";
+		};
+		04CB7D7A2C58CB460040E9A2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04CB7D7B2C58CB5E0040E9A2 /* CoinModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				042F5E902C42D97700E506C8 /* Preview Assets.xcassets in Resources */,
-				042F5E8D2C42D97700E506C8 /* Assets.xcassets in Resources */,
+				04CB7D692C589A820040E9A2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +217,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				042F5E8B2C42D97500E506C8 /* ContentView.swift in Sources */,
+				04CB7D732C58A5570040E9A2 /* HomeView.swift in Sources */,
 				042F5E892C42D97500E506C8 /* CryptoApp.swift in Sources */,
+				04CB7D772C58A7220040E9A2 /* CircleButtonView.swift in Sources */,
+				04CB7D6D2C589E090040E9A2 /* Color.swift in Sources */,
+				04CB7D792C58C0AB0040E9A2 /* CircleButtonAnimationView.swift in Sources */,
+				04CB7D7C2C58CB5E0040E9A2 /* CoinModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,8 +363,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,8 +393,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
